@@ -1,1 +1,0 @@
-const s=t=>new Promise((n,r)=>{const e=new Image,o=()=>{e.setAttribute("crossOrigin","anonymous"),e.addEventListener("error",r),e.addEventListener("load",()=>{e.removeEventListener("error",r),n(e)},{once:!0}),e.srcset=t};e.decode?(e.srcset=t,e.decode().then(()=>{n(e)}).catch(o)):o()});export{s as l};

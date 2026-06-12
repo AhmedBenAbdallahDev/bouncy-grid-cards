@@ -1,12 +1,17 @@
 import { motion, useAnimationFrame } from 'motion/react';
 import React, { useRef, useEffect, useState } from 'react';
 
+import img1 from '../assets/images/illustration_1_1779928638813.png';
+import img2 from '../assets/images/illustration_2_1779928654976.png';
+import img3 from '../assets/images/illustration_3_1779928674193.png';
+import img4 from '../assets/images/illustration_4_1779928691590.png';
+
 export default function Hero() {
   const cards = useRef([
-    { id: 0, src: "https://picsum.photos/seed/art1/600/600", el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: 2, baseY: 5 },
-    { id: 1, src: "https://picsum.photos/seed/art2/600/600", el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: -3, baseY: -6 },
-    { id: 2, src: "https://picsum.photos/seed/art3/600/600", el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: 6, baseY: 5 },
-    { id: 3, src: "https://picsum.photos/seed/art4/600/600", el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: -2, baseY: -4 },
+    { id: 0, src: img1, el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: 2, baseY: 5 },
+    { id: 1, src: img2, el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: -3, baseY: -6 },
+    { id: 2, src: img3, el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: 6, baseY: 5 },
+    { id: 3, src: img4, el: null as HTMLDivElement | null, state: { x: 0, y: 0, vx: 0, vy: 0, svx: 0, svy: 0, tx: 0, ty: 0, cx: 0, cy: 0 }, baseRot: -2, baseY: -4 },
   ]);
 
   const mouse = useRef({ x: 0, y: 0, lx: 0, ly: 0, active: false });

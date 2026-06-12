@@ -1,1 +1,0 @@
-import{r as c}from"./Ibg-He6l.js";function p(i=.05,u=.8){const n=c({x:0,y:0}),r=c({x:0,y:0}),e=c({x:0,y:0});function a(f=1){for(let t in e){let o=e[t]-r[t];o*=i,o*=f,n[t]*=u,n[t]+=o,r[t]+=n[t],r[t]=Math.round(r[t]*100)/100}}return{current:r,target:e,velocity:n,update:a}}export{p as u};
